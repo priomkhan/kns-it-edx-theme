@@ -14,10 +14,10 @@
     <footer>
       <div class="row">
         <div class="col-md-9">
-          {% if INDIGO_FOOTER_NAV_LINKS %}
+          {% if KNS_IT_FOOTER_NAV_LINKS %}
           <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
             <ul class="navbar-nav">
-              {% for link in INDIGO_FOOTER_NAV_LINKS %}
+              {% for link in KNS_IT_FOOTER_NAV_LINKS %}
               <li class="nav-item"><a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a></li>
               {% endfor %}
             </ul>
@@ -27,10 +27,10 @@
           ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
           <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
 
-          {% if INDIGO_FOOTER_LEGAL_LINKS %}
+          {% if KNS_IT_FOOTER_LEGAL_LINKS %}
           <nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
             <ul class="navbar-nav">
-              {% for link in INDIGO_FOOTER_LEGAL_LINKS %}
+              {% for link in KNS_IT_FOOTER_LEGAL_LINKS %}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
                 </li>
@@ -71,10 +71,10 @@
       % endif
     >
       <div class="colophon">
-        {% if INDIGO_FOOTER_NAV_LINKS %}
+        {% if KNS_IT_FOOTER_NAV_LINKS %}
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol>
-              {% for link in INDIGO_FOOTER_NAV_LINKS %}
+              {% for link in KNS_IT_FOOTER_NAV_LINKS %}
               <li><a href="{{ link['url'] }}">{{ link['title'] }}</a></li>
               {% endfor %}
           </ol>
@@ -102,10 +102,10 @@
         ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
         <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
 
-        {% if INDIGO_FOOTER_LEGAL_LINKS %}
+        {% if KNS_IT_FOOTER_LEGAL_LINKS %}
         <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
-            {% for link in INDIGO_FOOTER_LEGAL_LINKS %}
+            {% for link in KNS_IT_FOOTER_LEGAL_LINKS %}
               <li>
                 <a href="{{ link['url'] }}">{{ link['title'] }}</a>
               </li>
