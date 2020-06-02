@@ -1,6 +1,9 @@
 KNS_IT_WELCOME_MESSAGE: "Your Online Classroom"
 KNS_IT_PRIMARY_COLOR: "#3b85ff" # cool blue
 
+KNS_IT_PROMO_VIDEO_1: "MHfONRFNDBs"
+KNS_IT_PROMO_VIDEO_2: "MHfONRFNDBs"
+
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:
 # KNS_IT_FOOTER_NAV_LINKS: []
